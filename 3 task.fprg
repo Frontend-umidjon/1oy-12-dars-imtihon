@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-23 08:55:05 "/>
+        <attribute name="created" value="dXNlcjtNWS1BRVNUSEVUSUMtUEM7MjAyNC0wOC0yMzsiMDg6NTA6NTQgIjsyNzE0"/>
+        <attribute name="edited" value="dXNlcjtNWS1BRVNUSEVUSUMtUEM7MjAyNC0wOC0yMzsiMDg6NTU6MDUgIjsxOzI4MjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="login" type="String" array="False" size=""/>
+            <input variable="login"/>
+            <if expression="login==&quot;admin&quot;">
+                <then>
+                    <declare name="password" type="Integer" array="False" size=""/>
+                    <output expression="&quot;write the password&quot;" newline="True"/>
+                    <input variable="password"/>
+                    <if expression="password==1234">
+                        <then>
+                            <output expression="&quot;Welcome admin&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Wrong password&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Wrong login&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

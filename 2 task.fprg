@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-23 08:50:51 "/>
+        <attribute name="created" value="dXNlcjtNWS1BRVNUSEVUSUMtUEM7MjAyNC0wOC0yMzsiMDg6NDg6MDkgIjsyNzIx"/>
+        <attribute name="edited" value="dXNlcjtNWS1BRVNUSEVUSUMtUEM7MjAyNC0wOC0yMzsiMDg6NTA6NTEgIjsxOzI4MTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <if expression="a&gt;b &amp;&amp; a&gt;c">
+                <then>
+                    <output expression="a &amp; &quot; is the biggest number&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="b&gt;c &amp;&amp; b&gt;a">
+                        <then>
+                            <output expression="b &amp; &quot; is the biggest number&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="c&gt;a &amp;&amp; c&gt;b">
+                                <then>
+                                    <output expression="c &amp; &quot; is the biggest number&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
